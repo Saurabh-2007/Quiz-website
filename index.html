@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quick Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Quiz</h1>
+
+        <label for="userName">Enter Your Name:</label>
+        <input type="text" id="userName" placeholder="Your Name" required>
+        <br><br>
+
+        <form id="quizForm">
+            <div class="question">
+                <p>1. What is the capital of France?</p>
+                <input type="radio" name="q1" value="Paris"> Paris<br>
+                <input type="radio" name="q1" value="London"> London<br>
+                <input type="radio" name="q1" value="Rome"> Rome<br>
+            </div>
+
+            <div class="question">
+                <p>2. What is 5 + 3?</p>
+                <input type="radio" name="q2" value="7"> 7<br>
+                <input type="radio" name="q2" value="8"> 8<br>
+                <input type="radio" name="q2" value="9"> 9<br>
+            </div>
+            <div class="question">
+                <p>3. The name shuttle refers to whuch sports?</p>
+                <input type="radio" name="q3" value="cricket"> cricket<br>
+                <input type="radio" name="q3" value="Badminton">Badminton<br>
+                <input type="radio" name="q3" value="boxing"> boxing<br>
+            </div>
+            <div class="question">
+                <p>4. Who invented gravity ?</p>
+                <input type="radio" name="q4" value="Issac Newton">Issac Newton<br>
+                <input type="radio" name="q4" value=" J thompson"> J thompson<br>
+                <input type="radio" name="q4" value="Rutherford"> Rutherford <br>
+            </div>
+
+            <button type="button" onclick="submitQuiz()">Submit</button>
+        </form>
+
+        <div id="result"></div>
+        
+        <button id="generateBtn" style="display:none;" onclick="generateCertificate()">Generate Certificate</button>
+        </div>
+        <div class="container2">
+
+        <canvas id="certificateCanvas" style="display:none;"></canvas>
+        <button id="downloadBtn" style="display:none;" onclick="downloadCertificate()">Download Certificate</button>
+        </div>
+</body>
+    <script src="script.js">
+        
+    </script>
+</html>
